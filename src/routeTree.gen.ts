@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EnIndexRouteImport } from './routes/en.index'
+import { Route as NlIndexRouteImport } from './routes/nl.index'
+import { Route as EnWorkSlugRouteImport } from './routes/en.work.$slug'
+import { Route as NlWerkSlugRouteImport } from './routes/nl.werk.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnIndexRoute = EnIndexRouteImport.update({
+  id: '/en/',
+  path: '/en/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlIndexRoute = NlIndexRouteImport.update({
+  id: '/nl/',
+  path: '/nl/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnWorkSlugRoute = EnWorkSlugRouteImport.update({
+  id: '/en/work/$slug',
+  path: '/en/work/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlWerkSlugRoute = NlWerkSlugRouteImport.update({
+  id: '/nl/werk/$slug',
+  path: '/nl/werk/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/en/': typeof EnIndexRoute
+  '/nl/': typeof NlIndexRoute
+  '/en/work/$slug': typeof EnWorkSlugRoute
+  '/nl/werk/$slug': typeof NlWerkSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/en': typeof EnIndexRoute
+  '/nl': typeof NlIndexRoute
+  '/en/work/$slug': typeof EnWorkSlugRoute
+  '/nl/werk/$slug': typeof NlWerkSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/en/': typeof EnIndexRoute
+  '/nl/': typeof NlIndexRoute
+  '/en/work/$slug': typeof EnWorkSlugRoute
+  '/nl/werk/$slug': typeof NlWerkSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/en/' | '/nl/' | '/en/work/$slug' | '/nl/werk/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/en' | '/nl' | '/en/work/$slug' | '/nl/werk/$slug'
+  id: '__root__' | '/' | '/en/' | '/nl/' | '/en/work/$slug' | '/nl/werk/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  EnIndexRoute: typeof EnIndexRoute
+  NlIndexRoute: typeof NlIndexRoute
+  EnWorkSlugRoute: typeof EnWorkSlugRoute
+  NlWerkSlugRoute: typeof NlWerkSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/en/': {
+      id: '/en/'
+      path: '/en'
+      fullPath: '/en/'
+      preLoaderRoute: typeof EnIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/': {
+      id: '/nl/'
+      path: '/nl'
+      fullPath: '/nl/'
+      preLoaderRoute: typeof NlIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/work/$slug': {
+      id: '/en/work/$slug'
+      path: '/en/work/$slug'
+      fullPath: '/en/work/$slug'
+      preLoaderRoute: typeof EnWorkSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/werk/$slug': {
+      id: '/nl/werk/$slug'
+      path: '/nl/werk/$slug'
+      fullPath: '/nl/werk/$slug'
+      preLoaderRoute: typeof NlWerkSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  EnIndexRoute: EnIndexRoute,
+  NlIndexRoute: NlIndexRoute,
+  EnWorkSlugRoute: EnWorkSlugRoute,
+  NlWerkSlugRoute: NlWerkSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
