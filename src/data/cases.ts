@@ -87,5 +87,5 @@ export function getCase(slug: string): Case | undefined {
 export function nextCase(slug: string): Case {
   const list = publishedCases();
   const i = list.findIndex((c) => c.slug === slug);
-  return list[(i + 1) % list.length];
+  return list[(i + 1) % list.length] ?? list[0]!;
 }
