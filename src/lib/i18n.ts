@@ -38,7 +38,7 @@ export const t = {
     backHome: "All work",
     themeToggle: "Toggle theme",
     now: "now",
-    metaTitle: "Maria Molenaar — UX/UI Designer",
+    metaTitle: "Maria Molenaar · UX/UI Designer",
     metaDesc: "I'm Maria Molenaar, a UX/UI designer connecting technology with people.",
   },
   nl: {
@@ -74,7 +74,7 @@ export const t = {
     backHome: "Al het werk",
     themeToggle: "Thema wisselen",
     now: "nu",
-    metaTitle: "Maria Molenaar — UX/UI Designer",
+    metaTitle: "Maria Molenaar · UX/UI Designer",
     metaDesc: "Ik ben Maria Molenaar, UX/UI-designer die technologie en mensen verbindt.",
   },
 } as const;
@@ -83,6 +83,8 @@ export const caseText = (c: Case, lang: Lang) => ({
   label: lang === "en" ? c.labelEn : c.labelNl,
   title: lang === "en" ? c.titleEn : c.titleNl,
   summary: lang === "en" ? c.summaryEn : c.summaryNl,
+  keyFigures: lang === "en" ? c.keyFiguresEn : c.keyFiguresNl,
+  body: c.body[lang],
 });
 
 export const experience = [
