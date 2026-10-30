@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maria Molenaar — UX/UI Designer" },
+      { title: "Maria Molenaar · UX/UI Designer" },
       { name: "description", content: "Portfolio of Maria Molenaar, UX/UI designer in Amsterdam." },
       { name: "author", content: "Maria Molenaar" },
       { property: "og:type", content: "website" },

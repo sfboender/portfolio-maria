@@ -9,7 +9,7 @@ export const Route = createFileRoute("/en/work/$slug")({
     return c;
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.titleEn} — Maria Molenaar` : "Case — Maria Molenaar";
+    const title = loaderData ? `${loaderData.titleEn} · Maria Molenaar` : "Case · Maria Molenaar";
     const desc = loaderData?.summaryEn ?? "Case study by Maria Molenaar.";
     return {
       meta: [
