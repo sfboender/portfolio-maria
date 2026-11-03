@@ -23,7 +23,6 @@ export const t = {
     aboutText:
       "UX/UI designer with 5+ years of experience. I translate complex technology, like digital identity, into products people understand and trust. Background in communication and multimedia design.",
     downloadCv: "Download CV",
-    quotes: "Kind words",
     contactHeading: "Let's talk.",
     contactText: "Send a message and I'll get back to you.",
     name: "Name",
@@ -59,7 +58,6 @@ export const t = {
     aboutText:
       "UX/UI-designer met 5+ jaar ervaring. Ik vertaal complexe technologie, zoals digitale identiteit, naar producten die mensen begrijpen en vertrouwen. Achtergrond in communicatie en multimedia design.",
     downloadCv: "Download cv",
-    quotes: "Wat anderen zeggen",
     contactHeading: "Laten we praten.",
     contactText: "Stuur een bericht, dan reageer ik snel.",
     name: "Naam",

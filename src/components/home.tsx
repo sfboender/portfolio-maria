@@ -216,22 +216,6 @@ export function Home({ lang }: { lang: Lang }) {
         </Reveal>
       </section>
 
-      <section className="section">
-        <div className="container-site">
-          <Reveal>
-            <p className="eyebrow">{s.quotes}</p>
-          </Reveal>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[0, 1, 2].map((n) => (
-              <Reveal key={n} className="card p-8">
-                <p className="text-xl font-medium">[Quote]</p>
-                <p className="mt-8 text-sm text-muted-foreground">[Name, role]</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <Contact lang={lang} />
     </Shell>
   );
