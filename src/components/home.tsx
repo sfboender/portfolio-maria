@@ -208,7 +208,14 @@ export function Home({ lang }: { lang: Lang }) {
           />
           <div>
             <h2 className="h-section">{s.about}</h2>
-            <p className="mt-6 text-xl leading-relaxed text-muted-foreground">{s.aboutText}</p>
+            {s.aboutText.map((para, n) => (
+              <p
+                key={n}
+                className={`${n === 0 ? "mt-6 text-xl text-foreground" : "mt-4 text-lg text-muted-foreground"} leading-relaxed`}
+              >
+                {para}
+              </p>
+            ))}
             <div className="mt-10 flex flex-wrap gap-3">
               <a href={LINKEDIN} target="_blank" rel="noreferrer" className="btn-primary">
                 LinkedIn <ArrowUpRight size={16} />

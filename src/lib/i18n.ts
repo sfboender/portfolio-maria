@@ -20,9 +20,12 @@ export const t = {
     experience: "Experience",
     education: "Education",
     about: "About",
-    aboutText:
-      "UX/UI designer with 5+ years of experience. I translate complex technology, like digital identity, into products people understand and trust. Background in communication and multimedia design.",
-    downloadCv: "Download CV",
+    aboutText: [
+      "For me, good UX starts with curiosity. Why does someone do something a certain way? Where is the friction? And how can we make it just a little bit better? That's where my work begins.",
+      "As a designer, I connect what users need, what an organisation wants to achieve and what technology makes possible. In recent years I've worked on digital products in places where innovation plays a big role. What I enjoy most is exploring new technology and turning complex material into something that feels clear to people.",
+      "I like working together, asking questions and thinking along from first idea to final product. Whether a project starts with a blank page or with clear boundaries, I look for room to make something better, clearer or more pleasant.",
+    ],
+    downloadCv: "Download CV (Dutch)",
     contactHeading: "Let's talk.",
     contactText: "Send a message and I'll get back to you.",
     name: "Name",
@@ -55,8 +58,11 @@ export const t = {
     experience: "Ervaring",
     education: "Opleiding",
     about: "Over mij",
-    aboutText:
-      "UX/UI-designer met 5+ jaar ervaring. Ik vertaal complexe technologie, zoals digitale identiteit, naar producten die mensen begrijpen en vertrouwen. Achtergrond in communicatie en multimedia design.",
+    aboutText: [
+      "Goede UX begint voor mij bij nieuwsgierigheid. Waarom doet iemand iets op een bepaalde manier? Waar zit de frictie? En hoe kunnen we het nét wat beter maken? Daar begint mijn werk.",
+      "Als designer sla ik de brug tussen de behoeften van gebruikers, de doelen van een organisatie en de mogelijkheden van technologie. De afgelopen jaren heb ik gewerkt aan digitale producten in omgevingen waar innovatie een grote rol speelt. Juist het ontdekken van nieuwe technologie en het vertalen van complexe materie naar iets wat voor mensen begrijpelijk voelt, vind ik interessant.",
+      "Ik werk graag samen, stel vragen en denk mee van eerste idee tot eindproduct. Of een project nu begint met een leeg vel of met duidelijke kaders: ik zoek de ruimte om iets beter, duidelijker of prettiger te maken.",
+    ],
     downloadCv: "Download cv",
     contactHeading: "Laten we praten.",
     contactText: "Stuur een bericht, dan reageer ik snel.",
