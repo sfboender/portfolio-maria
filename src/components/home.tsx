@@ -213,7 +213,7 @@ export function Home({ lang }: { lang: Lang }) {
               <a href={LINKEDIN} target="_blank" rel="noreferrer" className="btn-primary">
                 LinkedIn <ArrowUpRight size={16} />
               </a>
-              <a href="/cv/maria-molenaar-cv.pdf" className="btn-ghost">
+              <a href="/cv/maria-molenaar-cv.pdf" target="_blank" rel="noreferrer" className="btn-ghost">
                 {s.downloadCv} <Download size={16} />
               </a>
             </div>
