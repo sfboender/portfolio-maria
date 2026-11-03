@@ -121,10 +121,20 @@ export function Home({ lang }: { lang: Lang }) {
               const ct = caseText(c, lang);
               return (
                 <Reveal key={c.slug} className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
-                  <Placeholder
-                    label={`[Cover image: ${c.titleEn}]`}
-                    className={`aspect-[4/3] rounded-[28px] ${n % 2 ? "md:order-2" : ""}`}
-                  />
+                  <Link
+                    to={lang === "en" ? "/en/work/$slug" : "/nl/werk/$slug"}
+                    params={{ slug: c.slug }}
+                    className={`block overflow-hidden rounded-[28px] border border-border ${n % 2 ? "md:order-2" : ""}`}
+                    tabIndex={-1}
+                    aria-hidden="true"
+                  >
+                    <img
+                      src={c.cover}
+                      alt=""
+                      loading="lazy"
+                      className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+                    />
+                  </Link>
                   <div>
                     <p className="eyebrow">{ct.label}</p>
                     <h3 className="h-section mt-4">{ct.title}</h3>

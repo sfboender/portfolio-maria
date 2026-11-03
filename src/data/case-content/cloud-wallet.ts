@@ -49,8 +49,8 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Each organisation had different responsibilities, but many interactions followed the same structure. Spotting these recurring patterns helped simplify complex workflows and made the experience more consistent for everyone involved.",
     },
-    { t: "image", alt: "Workflow of the road salt proof of concept" },
-    { t: "image", alt: "Document requests and approvals in the proof of concept" },
+    { t: "image", src: "/images/cases/cloud-wallet/poc-workflow.webp", alt: "Workflow of the road salt proof of concept" },
+    { t: "image", src: "/images/cases/cloud-wallet/poc-documents.webp", alt: "Document requests and approvals in the proof of concept" },
     {
       t: "callout",
       text: "The biggest opportunity was not digitising the existing process, but redesigning it. By automating repetitive tasks and letting the workflow trigger the next step, the platform cut manual work and gave users a clear view of the whole process.",
@@ -101,7 +101,7 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Through competitor analysis, design rounds and user feedback, we moved from a detail-heavy layout to a list view built for scanning, filtering and managing large collections. The Credential Overview became the heart of the platform and the starting point for the whole credential lifecycle.",
     },
-    { t: "image", alt: "From asset overview to credential overview" },
+    { t: "image", src: "/images/cases/cloud-wallet/credential-overview.webp", alt: "From asset overview to credential overview" },
 
     { t: "h2", text: "Designing the credential lifecycle" },
     {
@@ -121,12 +121,12 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Issuing a credential meant turning technical requirements into decisions that make sense to the user. With the product and development team, I mapped out which information was needed, which options depended on earlier choices and in which order decisions should be made. Over several rounds I worked out how to structure this without turning it into one big technical form. The result is a guided flow that introduces settings step by step, with advanced options available when needed.",
     },
-    { t: "image", alt: "Guided flow for creating a credential" },
+    { t: "image", src: "/images/cases/cloud-wallet/issue-flow.webp", alt: "Guided flow for creating a credential" },
     {
       t: "p",
       text: "I focused on when information and decisions should appear. Related settings are grouped, advanced settings stay within reach, and the hierarchy is clearer without losing the flexibility different credential types need.",
     },
-    { t: "image", alt: "From configuration to issuing" },
+    { t: "image", src: "/images/cases/cloud-wallet/issue-configuration.webp", alt: "From configuration to issuing" },
     {
       t: "p",
       text: "The same idea applies to issuing. Instead of one large flow, users first set up and review what they want to issue, and then choose how to deliver it to the holder. Keeping these moments apart also makes room for different issuing methods within the same structure.",
@@ -136,22 +136,22 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Credential sharing is currently being designed. The challenge is helping users understand who is asking for their data, what is being asked and which credential provides it, especially when several credentials can answer the same request. The current concepts let users choose between matching credentials and see which details will be shared before they share. Next up is selective disclosure: more control over which requested details users share, while clearly showing what stays private.",
     },
-    { t: "image", alt: "Work in progress: sharing concepts" },
+    { t: "image", src: "/images/cases/cloud-wallet/sharing-concepts.webp", alt: "Work in progress: sharing concepts" },
 
     { t: "h2", text: "Navigation built around user roles" },
     {
       t: "p",
       text: "The first side menu was kept simple on purpose, so we could focus on designing and testing the core credential flows. As those flows grew and more role-specific features arrived, it was the right moment to redesign the navigation around the roles in the platform: holder, issuer, relying party and administrator. Each role needs different features; the Credential Designer, for example, is meant for issuers. I explored how the navigation could adapt to the active role, while users can switch roles within one consistent structure.",
     },
-    { t: "image", alt: "Navigation per role" },
+    { t: "image", src: "/images/cases/cloud-wallet/navigation-roles.webp", alt: "Navigation per role" },
 
     { t: "h2", text: "From infrastructure to real use cases" },
     {
       t: "p",
       text: "The Cloud Wallet was also used to explore how credentials can support real workflows. In a scheduling use case for education, students could book machines based on certificates they had earned. The certificates are issued as digital credentials and stored in the Sphereon Wallet. When a student books a machine in the Cloud Wallet, the credentials are checked to see if they are qualified. I designed the booking experience around this check, combining a familiar booking flow with credential verification and showing how both wallets work together.",
     },
-    { t: "image", alt: "Machine booking based on credentials" },
-    { t: "image", alt: "Credential check while booking" },
+    { t: "image", src: "/images/cases/cloud-wallet/scheduling.webp", alt: "Machine booking based on credentials" },
+    { t: "image", src: "/images/cases/cloud-wallet/machine-safety.webp", alt: "Machine safety: one credential, checked online and in person" },
 
     { t: "h2", text: "Project highlight: a design system that scales" },
     {
@@ -173,9 +173,9 @@ export const cloudWallet: CaseBody = {
         { title: "Contacts and relationships", text: "Managing the organisations and parties users deal with in credential workflows." },
       ],
     },
-    { t: "image", alt: "Credential Designer" },
-    { t: "image", alt: "Presentation Definition editor" },
-    { t: "image", alt: "Contacts and relationships" },
+    { t: "image", src: "/images/cases/cloud-wallet/credential-designer.webp", alt: "Credential Designer" },
+    { t: "image", src: "/images/cases/cloud-wallet/presentation-definition.webp", alt: "Presentation Definition editor" },
+    { t: "image", src: "/images/cases/cloud-wallet/contacts.webp", alt: "Contacts and relationships" },
 
     { t: "h2", text: "Where the product stands" },
     {
@@ -240,8 +240,8 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Elke organisatie had andere verantwoordelijkheden, maar veel handelingen hadden dezelfde opbouw. Door die terugkerende patronen te herkennen, werden ingewikkelde workflows eenvoudiger en de ervaring voor iedereen consistenter.",
     },
-    { t: "image", alt: "Workflow van de proof of concept voor strooizout" },
-    { t: "image", alt: "Documentverzoeken en goedkeuringen in de proof of concept" },
+    { t: "image", src: "/images/cases/cloud-wallet/poc-workflow.webp", alt: "Workflow van de proof of concept voor strooizout" },
+    { t: "image", src: "/images/cases/cloud-wallet/poc-documents.webp", alt: "Documentverzoeken en goedkeuringen in de proof of concept" },
     {
       t: "callout",
       text: "De grootste kans zat niet in het digitaliseren van het bestaande proces, maar in het opnieuw ontwerpen ervan. Door herhalend werk te automatiseren en de workflow de volgende stap te laten starten, verminderde het handwerk en kregen gebruikers overzicht over het hele proces.",
@@ -292,7 +292,7 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Via concurrentieonderzoek, ontwerprondes en feedback van gebruikers gingen we van een opbouw vol details naar een lijstweergave om snel te scannen, filteren en grote hoeveelheden te beheren. Het overzicht werd het hart van het platform en het startpunt voor de hele levensloop van een bewijs.",
     },
-    { t: "image", alt: "Van overzicht van partijen naar overzicht van bewijzen" },
+    { t: "image", src: "/images/cases/cloud-wallet/credential-overview.webp", alt: "Van overzicht van partijen naar overzicht van bewijzen" },
 
     { t: "h2", text: "De levensloop van een bewijs ontwerpen" },
     {
@@ -312,12 +312,12 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Een bewijs uitgeven betekende technische eisen omzetten in keuzes die logisch zijn voor de gebruiker. Met het product- en ontwikkelteam bracht ik in kaart welke informatie nodig was, welke opties afhingen van eerdere keuzes en in welke volgorde beslissingen moesten komen. In meerdere rondes zocht ik hoe dit kon zonder één groot technisch formulier. Het resultaat is een begeleide flow die instellingen stap voor stap toont, met geavanceerde opties binnen handbereik.",
     },
-    { t: "image", alt: "Begeleide flow om een bewijs te maken" },
+    { t: "image", src: "/images/cases/cloud-wallet/issue-flow.webp", alt: "Begeleide flow om een bewijs te maken" },
     {
       t: "p",
       text: "Ik lette vooral op wanneer informatie en keuzes verschijnen. Verwante instellingen staan bij elkaar, geavanceerde instellingen blijven bereikbaar, en de opbouw is duidelijker zonder de flexibiliteit te verliezen die verschillende soorten bewijzen nodig hebben.",
     },
-    { t: "image", alt: "Van instellen naar uitgeven" },
+    { t: "image", src: "/images/cases/cloud-wallet/issue-configuration.webp", alt: "Van instellen naar uitgeven" },
     {
       t: "p",
       text: "Hetzelfde geldt voor het uitgeven. In plaats van één grote flow stellen gebruikers eerst in wat ze willen uitgeven en controleren ze dat, en kiezen ze daarna hoe het bij de houder komt. Door die momenten te scheiden, passen verschillende manieren van uitgeven in dezelfde structuur.",
@@ -327,22 +327,22 @@ export const cloudWallet: CaseBody = {
       t: "p",
       text: "Het delen van bewijzen is nu in ontwerp. De uitdaging is gebruikers te laten begrijpen wie om hun gegevens vraagt, wat er gevraagd wordt en welk bewijs het levert, vooral als meerdere bewijzen hetzelfde verzoek kunnen beantwoorden. De huidige concepten laten gebruikers kiezen tussen passende bewijzen en zien welke gegevens gedeeld worden voordat ze delen. Daarna volgt selectief delen: meer controle over welke gevraagde gegevens je deelt, met duidelijk wat privé blijft.",
     },
-    { t: "image", alt: "Werk in uitvoering: concepten voor delen" },
+    { t: "image", src: "/images/cases/cloud-wallet/sharing-concepts.webp", alt: "Werk in uitvoering: concepten voor delen" },
 
     { t: "h2", text: "Navigatie rond gebruikersrollen" },
     {
       t: "p",
       text: "Het eerste zijmenu was bewust eenvoudig, zodat we ons konden richten op het ontwerpen en testen van de kernflows. Toen die groeiden en er functies per rol bijkwamen, was het tijd om de navigatie opnieuw te ontwerpen rond de rollen in het platform: houder, uitgever, controleur en beheerder. Elke rol heeft andere functies nodig; de Credential Designer is bijvoorbeeld voor uitgevers. Ik onderzocht hoe de navigatie zich aanpast aan de actieve rol, terwijl gebruikers binnen één vaste structuur van rol kunnen wisselen.",
     },
-    { t: "image", alt: "Navigatie per rol" },
+    { t: "image", src: "/images/cases/cloud-wallet/navigation-roles.webp", alt: "Navigatie per rol" },
 
     { t: "h2", text: "Van infrastructuur naar echte toepassingen" },
     {
       t: "p",
       text: "De Cloud Wallet is ook gebruikt om te laten zien hoe digitale bewijzen echte processen kunnen ondersteunen. In een planningstoepassing voor het onderwijs konden studenten machines reserveren op basis van certificaten die ze hadden behaald. Die certificaten worden als digitale bewijzen uitgegeven en bewaard in de Sphereon Wallet. Bij het reserveren in de Cloud Wallet wordt gecontroleerd of de student bevoegd is. Ik ontwierp de reserveringservaring rond die controle, met een vertrouwde boekingsflow, en liet zien hoe beide wallets samenwerken.",
     },
-    { t: "image", alt: "Machines reserveren op basis van bewijzen" },
-    { t: "image", alt: "Controle van bewijzen tijdens het reserveren" },
+    { t: "image", src: "/images/cases/cloud-wallet/scheduling.webp", alt: "Machines reserveren op basis van bewijzen" },
+    { t: "image", src: "/images/cases/cloud-wallet/machine-safety.webp", alt: "Machineveiligheid: één bewijs, online en ter plekke gecontroleerd" },
 
     { t: "h2", text: "Uitgelicht: een design system dat meegroeit" },
     {
@@ -364,9 +364,9 @@ export const cloudWallet: CaseBody = {
         { title: "Contacten en relaties", text: "De organisaties en partijen beheren waarmee gebruikers werken." },
       ],
     },
-    { t: "image", alt: "Credential Designer" },
-    { t: "image", alt: "Editor voor Presentation Definition" },
-    { t: "image", alt: "Contacten en relaties" },
+    { t: "image", src: "/images/cases/cloud-wallet/credential-designer.webp", alt: "Credential Designer" },
+    { t: "image", src: "/images/cases/cloud-wallet/presentation-definition.webp", alt: "Editor voor Presentation Definition" },
+    { t: "image", src: "/images/cases/cloud-wallet/contacts.webp", alt: "Contacten en relaties" },
 
     { t: "h2", text: "Waar het product nu staat" },
     {

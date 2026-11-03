@@ -9,6 +9,7 @@ export type Block =
   | { t: "points"; items: { title: string; text: string }[] }
   | { t: "callout"; text: string }
   | { t: "image"; src?: string; alt: string }
+  | { t: "video"; src: string; poster?: string; alt: string }
   | { t: "link"; text: string; href: string };
 
 export interface CaseBody {

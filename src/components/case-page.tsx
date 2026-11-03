@@ -31,7 +31,7 @@ export function CasePage({ c, lang }: { c: Case; lang: Lang }) {
           </dl>
         </header>
         <Reveal className="container-site">
-          <Placeholder label={`[Cover image: ${c.titleEn}]`} className="aspect-[16/9] rounded-[28px]" />
+          <img src={c.cover} alt="" className="w-full rounded-[28px] border border-border" />
         </Reveal>
         <Reveal className="container-site mt-10">
           <div className="card grid gap-6 p-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -109,10 +109,26 @@ function CaseBlock({ b, lang }: { b: Block; lang: Lang }) {
       return (
         <Reveal className="mt-8">
           {b.src ? (
-            <img src={b.src} alt={b.alt} loading="lazy" className="w-full rounded-[20px] border border-border" />
+            <a href={b.src} target="_blank" rel="noreferrer" className="block" aria-label={b.alt}>
+              <img src={b.src} alt={b.alt} loading="lazy" className="w-full rounded-[20px] border border-border" />
+            </a>
           ) : (
             <Placeholder label={`[Image: ${b.alt}]`} className="aspect-[16/10] rounded-[20px]" />
           )}
+        </Reveal>
+      );
+    case "video":
+      return (
+        <Reveal className="mt-8">
+          <video
+            src={b.src}
+            poster={b.poster}
+            controls
+            preload="none"
+            playsInline
+            aria-label={b.alt}
+            className="mx-auto max-h-[80vh] w-full rounded-[20px] border border-border bg-black"
+          />
         </Reveal>
       );
     case "link": {

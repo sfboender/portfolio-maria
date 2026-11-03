@@ -51,7 +51,7 @@ export const cases: Case[] = [
       "~80% wilde eerst de hele route zien",
       "Door naar fase 2",
     ],
-    cover: "/images/cases/sprind-eudi-wallet.jpg",
+    cover: "/images/cases/sprind-eudi-wallet/cover.webp",
     body: sprindEudiWallet,
   },
   {
@@ -70,7 +70,7 @@ export const cases: Case[] = [
       "Een wallet waarin privacy voorop staat, om digitale bewijzen te ontvangen, bewaren en delen. Ik ontwierp de hele ervaring, van eerste scherm tot activiteitenoverzicht.",
     keyFiguresEn: ["Onboarding live in the app", "Built on my graduation research (2021)"],
     keyFiguresNl: ["Onboarding live in de app", "Gebaseerd op mijn afstudeeronderzoek (2021)"],
-    cover: "/images/cases/sphereon-wallet.jpg",
+    cover: "/images/cases/sphereon-wallet/cover.webp",
     body: sphereonWallet,
   },
   {
@@ -89,7 +89,7 @@ export const cases: Case[] = [
       "Van een proof of concept voor strooizout naar een platform waarop organisaties digitale bewijzen uitgeven en beheren.",
     keyFiguresEn: ["MVP", "Four roles: holder, issuer, relying party, administrator"],
     keyFiguresNl: ["MVP", "Vier rollen: houder, uitgever, controleur, beheerder"],
-    cover: "/images/cases/cloud-wallet.jpg",
+    cover: "/images/cases/cloud-wallet/credential-overview.webp",
     body: cloudWallet,
   },
 ];

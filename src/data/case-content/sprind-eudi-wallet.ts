@@ -45,7 +45,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Users were introduced to the wallet, accepted the Terms of Service, set a PIN and optional biometrics, and entered some basic personal information that stayed on the device, following the principles of Self-Sovereign Identity (SSI). It worked, but it offered little guidance or context. That created an opportunity to rethink the onboarding from the ground up.",
     },
-    { t: "image", alt: "The original Sphereon Wallet onboarding" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/original-onboarding.webp", alt: "The original Sphereon Wallet onboarding" },
     {
       t: "p",
       text: "Before redesigning anything, we first needed to understand where users struggled. We explored how people see digital identity, what information they need during onboarding, and which moments matter most for building trust and confidence.",
@@ -81,7 +81,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "The starting point was the existing onboarding, which mainly focused on setting up the wallet itself. The new EUDI onboarding added a whole new challenge: integrating the German PID verification without making the experience feel technical or disruptive.",
     },
-    { t: "image", alt: "Starting point: the original onboarding journey" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/starting-point-journey.webp", alt: "Starting point: the original onboarding journey" },
     {
       t: "p",
       text: "We also did desk research into products with similarly complex onboarding: digital identity, banking and financial apps. We looked at progress indicators, the order of steps, and the balance between giving information and keeping momentum. These insights gave us design principles before we started on our own concepts.",
@@ -106,6 +106,8 @@ export const sprindEudiWallet: CaseBody = {
       ],
     },
 
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/journey-map-1.webp", alt: "Onboarding journey map" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/journey-map-2.webp", alt: "Onboarding journey map" },
     { t: "h2", text: "Validating the first concepts" },
     {
       t: "p",
@@ -115,12 +117,12 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "The most critical part was the PID verification. Users had to scan their physical ID card and enter two different PIN codes: the eID PIN to verify their identity with the Ausweis card, and the Wallet PIN to store the PID credential securely in the wallet. We explored two interaction concepts to make the difference between the two PINs clear and to guide users through the NFC scan with as little doubt as possible.",
     },
-    { t: "image", alt: "Low-fidelity wireframes of the two PIN concepts" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/pin-wireframes.webp", alt: "Low-fidelity wireframes of the two PIN concepts" },
     {
       t: "p",
       text: "We built interactive prototypes and ran several moderated usability sessions with a structured interview guide. Participants completed both onboarding flows while thinking aloud, so we could compare the concepts and find recurring problems before moving to high fidelity.",
     },
-    { t: "image", alt: "Usability test session" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/usability-test.webp", alt: "Usability test session" },
     { t: "h3", text: "Key insights" },
     {
       t: "list",
@@ -136,7 +138,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "These findings shaped the next iteration. We combined the strongest parts of both concepts into one mid-fidelity flow that solved the main pain points and gave users more clarity and confidence.",
     },
-    { t: "image", alt: "The combined mid-fidelity flow" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/combined-flow.webp", alt: "The combined mid-fidelity flow" },
 
     { t: "h2", text: "Making progress feel achievable" },
     {
@@ -147,7 +149,9 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Instead of one progress indicator, I explored different approaches inspired by other onboarding and multi-step verification flows, and refined them through usability tests and several iterations.",
     },
-    { t: "image", alt: "Explorations of the progress indicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-exploration-1.webp", alt: "Explorations of the progress indicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-exploration-2.webp", alt: "Explorations of the progress indicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-exploration-3.webp", alt: "Explorations of the progress indicator" },
     { t: "p", text: "The final solution combined two levels of progress:" },
     {
       t: "points",
@@ -166,7 +170,8 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "This layered approach uses visibility of system status, progressive disclosure and the goal gradient effect. Instead of one long progress bar, the onboarding is split into meaningful milestones, which makes a complex verification process feel achievable.",
     },
-    { t: "image", alt: "Final two-level progress indicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-final.webp", alt: "Final two-level progress indicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-step.webp", alt: "Step progress within a phase" },
 
     { t: "h2", text: "Turning identity verification into a guided experience" },
     {
@@ -182,25 +187,25 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Before starting, users get a clear overview of what they need: their Ausweis card and PIN, plus what information will be retrieved and why. In testing, many participants didn't have their card nearby or no longer remembered their PIN. So users could skip the PID setup during onboarding and complete it later in the app. This lowered the barrier to finishing onboarding while still letting people explore the wallet first.",
     },
-    { t: "image", alt: "Preparation screen before verification" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/pid-preparation.webp", alt: "Preparation screen before verification" },
     { t: "h3", text: "Guiding users through the NFC scan" },
     {
       t: "p",
       text: "Users first enter their Ausweis PIN and then hold the card against the phone's NFC reader. We designed custom illustrations showing exactly where to place the card. After testing, we made separate illustrations for iPhone and Android, because the NFC readers sit in different places and that caused confusion.",
     },
-    { t: "image", alt: "NFC scan illustrations for iPhone and Android" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/nfc-illustrations.webp", alt: "NFC scan illustrations for iPhone and Android" },
     { t: "h3", text: "Making two PIN codes unmistakable" },
     {
       t: "p",
       text: "Because participants often mixed up the Ausweis PIN and the Wallet PIN, we made the two screens clearly different through layout, visual hierarchy and supporting text. Testing also showed how much people relied on titles, descriptions and pop-up text during this unfamiliar process.",
     },
-    { t: "image", alt: "The Ausweis PIN and Wallet PIN screens" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/pin-screens.webp", alt: "The Ausweis PIN and Wallet PIN screens" },
     { t: "h3", text: "Confirming personal information" },
     {
       t: "p",
       text: "Before the PID credential is imported, users see a final overview of the personal information read from their Ausweis card. This gives them one last chance to review and approve it before it is stored in the wallet.",
     },
-    { t: "image", alt: "Review of personal information before import" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/review-information.webp", alt: "Review of personal information before import" },
     { t: "h3", text: "Why this worked" },
     {
       t: "list",
@@ -224,7 +229,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "The prototype below brings these decisions together: the full journey from creating a wallet to receiving a PID credential.",
     },
-    { t: "image", alt: "Prototype of the complete onboarding" },
+    { t: "video", src: "/images/cases/sprind-eudi-wallet/onboarding-prototype.mp4", poster: "/images/cases/sprind-eudi-wallet/onboarding-prototype-poster.jpg", alt: "Screen recording of the complete onboarding prototype" },
 
     { t: "h2", text: "Presenting the results in Berlin" },
     {
@@ -235,7 +240,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "The project covered both the wallet app and the backend behind it, so the demos showed the full experience: creating a wallet, verifying your identity and receiving a PID credential. What we learned there went straight into the next design iteration.",
     },
-    { t: "image", alt: "Sphereon booth at the SPRIND event in Berlin" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/berlin.webp", alt: "Presenting at the SPRIND event in Berlin" },
     { t: "h3", text: "What we took into the next phase" },
     {
       t: "list",
@@ -252,6 +257,7 @@ export const sprindEudiWallet: CaseBody = {
       text: "Not every insight led to an immediate change. Some needed more technical research, others went on the backlog. Together they gave a clear direction for the next phase.",
     },
 
+    { t: "video", src: "/images/cases/sprind-eudi-wallet/wallet-demo.mp4", poster: "/images/cases/sprind-eudi-wallet/wallet-demo-poster.jpg", alt: "Demo of the wallet, from onboarding to receiving a PID credential" },
     { t: "h2", text: "Selected for phase 2" },
     {
       t: "p",
@@ -324,7 +330,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Gebruikers kregen een introductie, gingen akkoord met de voorwaarden, stelden een pincode en eventueel biometrie in, en vulden wat persoonlijke gegevens in die op het toestel bleven, volgens de principes van Self-Sovereign Identity (SSI). Dat werkte, maar gaf weinig uitleg of houvast. Een goede reden om de onboarding helemaal opnieuw te bekijken.",
     },
-    { t: "image", alt: "De oorspronkelijke onboarding van de Sphereon Wallet" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/original-onboarding.webp", alt: "De oorspronkelijke onboarding van de Sphereon Wallet" },
     {
       t: "p",
       text: "Voordat we iets herontwierpen, wilden we eerst weten waar gebruikers vastliepen. We onderzochten hoe mensen naar digitale identiteit kijken, welke informatie ze nodig hebben tijdens de onboarding en welke momenten het belangrijkst zijn voor vertrouwen.",
@@ -360,7 +366,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Het startpunt was de bestaande onboarding, die vooral draaide om het instellen van de wallet. De nieuwe EUDI-onboarding bracht een heel nieuwe uitdaging: de Duitse PID-controle inbouwen zonder dat het technisch of storend aanvoelt.",
     },
-    { t: "image", alt: "Startpunt: de oorspronkelijke onboardingroute" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/starting-point-journey.webp", alt: "Startpunt: de oorspronkelijke onboardingroute" },
     {
       t: "p",
       text: "We deden ook deskresearch naar producten met een vergelijkbaar ingewikkelde onboarding: apps voor digitale identiteit, bankieren en financiën. We keken naar voortgangsindicatoren, de volgorde van stappen en de balans tussen informatie geven en vaart houden. Dat leverde ontwerpprincipes op voordat we aan onze eigen concepten begonnen.",
@@ -385,6 +391,8 @@ export const sprindEudiWallet: CaseBody = {
       ],
     },
 
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/journey-map-1.webp", alt: "Kaart van de onboardingroute" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/journey-map-2.webp", alt: "Kaart van de onboardingroute" },
     { t: "h2", text: "De eerste concepten testen" },
     {
       t: "p",
@@ -394,12 +402,12 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Het lastigste deel was de PID-controle. Gebruikers moesten hun fysieke ID-kaart scannen en twee verschillende pincodes invoeren: de eID-pincode om hun identiteit te bevestigen met de Ausweis, en de wallet-pincode om het PID-bewijs veilig in de wallet op te slaan. We probeerden twee interactieconcepten uit om het verschil tussen de twee pincodes duidelijk te maken en gebruikers zonder twijfel door de NFC-scan te leiden.",
     },
-    { t: "image", alt: "Eenvoudige wireframes van de twee pincode-concepten" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/pin-wireframes.webp", alt: "Eenvoudige wireframes van de twee pincode-concepten" },
     {
       t: "p",
       text: "We bouwden interactieve prototypes en hielden meerdere begeleide gebruikerstests met een vaste interviewopzet. Deelnemers doorliepen beide flows en dachten hardop na. Zo konden we de concepten vergelijken en terugkerende problemen vinden voordat we het visuele ontwerp ingingen.",
     },
-    { t: "image", alt: "Een gebruikerstest" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/usability-test.webp", alt: "Een gebruikerstest" },
     { t: "h3", text: "Belangrijkste inzichten" },
     {
       t: "list",
@@ -415,7 +423,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Deze bevindingen bepaalden de volgende versie. We combineerden de sterkste onderdelen van beide concepten tot één flow die de grootste knelpunten oploste en gebruikers meer duidelijkheid en zekerheid gaf.",
     },
-    { t: "image", alt: "De gecombineerde flow" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/combined-flow.webp", alt: "De gecombineerde flow" },
 
     { t: "h2", text: "Voortgang die haalbaar voelt" },
     {
@@ -426,7 +434,9 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "In plaats van één voortgangsindicator probeerde ik verschillende aanpakken uit, geïnspireerd op andere onboardings en controles in meerdere stappen. Die heb ik verbeterd via gebruikerstests en meerdere rondes.",
     },
-    { t: "image", alt: "Verkenningen van de voortgangsindicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-exploration-1.webp", alt: "Verkenningen van de voortgangsindicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-exploration-2.webp", alt: "Verkenningen van de voortgangsindicator" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-exploration-3.webp", alt: "Verkenningen van de voortgangsindicator" },
     { t: "p", text: "De uiteindelijke oplossing combineerde twee niveaus van voortgang:" },
     {
       t: "points",
@@ -445,7 +455,8 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Deze gelaagde aanpak maakt gebruik van zichtbare systeemstatus, informatie stap voor stap tonen en het doelgradiënt-effect. In plaats van één lange balk is de onboarding verdeeld in herkenbare mijlpalen. Zo voelt een ingewikkelde controle haalbaar.",
     },
-    { t: "image", alt: "De uiteindelijke voortgangsindicator met twee niveaus" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-final.webp", alt: "De uiteindelijke voortgangsindicator met twee niveaus" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/progress-step.webp", alt: "Voortgang per stap binnen een fase" },
 
     { t: "h2", text: "Identiteitscontrole als begeleide ervaring" },
     {
@@ -461,25 +472,25 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Voordat ze beginnen, zien gebruikers wat ze nodig hebben: hun Ausweis en pincode, en welke gegevens worden opgehaald en waarom. Tijdens de tests hadden veel deelnemers hun kaart niet bij de hand of wisten ze hun pincode niet meer. Daarom konden gebruikers de PID-stap overslaan en later in de app afronden. Zo werd de drempel om de onboarding af te maken lager, en konden mensen de wallet eerst verkennen.",
     },
-    { t: "image", alt: "Voorbereidingsscherm voor de controle" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/pid-preparation.webp", alt: "Voorbereidingsscherm voor de controle" },
     { t: "h3", text: "Begeleiding bij de NFC-scan" },
     {
       t: "p",
       text: "Gebruikers voeren eerst hun Ausweis-pincode in en houden daarna de kaart tegen de NFC-lezer van hun telefoon. We maakten eigen illustraties die precies laten zien waar de kaart moet. Na de tests kwamen er aparte illustraties voor iPhone en Android, omdat de NFC-lezer op een andere plek zit en dat verwarring gaf.",
     },
-    { t: "image", alt: "NFC-illustraties voor iPhone en Android" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/nfc-illustrations.webp", alt: "NFC-illustraties voor iPhone en Android" },
     { t: "h3", text: "Twee pincodes die je niet kunt verwarren" },
     {
       t: "p",
       text: "Omdat deelnemers de Ausweis-pincode en de wallet-pincode vaak door elkaar haalden, maakten we de twee schermen duidelijk anders qua opbouw, nadruk en tekst. De tests lieten ook zien hoe sterk mensen leunden op titels, uitleg en pop-ups tijdens dit onbekende proces.",
     },
-    { t: "image", alt: "De schermen voor de Ausweis-pincode en de wallet-pincode" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/pin-screens.webp", alt: "De schermen voor de Ausweis-pincode en de wallet-pincode" },
     { t: "h3", text: "Persoonlijke gegevens bevestigen" },
     {
       t: "p",
       text: "Voordat het PID-bewijs wordt geïmporteerd, zien gebruikers een laatste overzicht van de gegevens die van hun Ausweis zijn gelezen. Zo kunnen ze alles nog één keer controleren en goedkeuren voordat het in de wallet wordt opgeslagen.",
     },
-    { t: "image", alt: "Overzicht van persoonlijke gegevens voor het importeren" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/review-information.webp", alt: "Overzicht van persoonlijke gegevens voor het importeren" },
     { t: "h3", text: "Waarom dit werkte" },
     {
       t: "list",
@@ -503,7 +514,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Het prototype hieronder brengt al deze keuzes samen: de hele route van een wallet aanmaken tot het ontvangen van een PID-bewijs.",
     },
-    { t: "image", alt: "Prototype van de complete onboarding" },
+    { t: "video", src: "/images/cases/sprind-eudi-wallet/onboarding-prototype.mp4", poster: "/images/cases/sprind-eudi-wallet/onboarding-prototype-poster.jpg", alt: "Schermopname van het complete onboardingprototype" },
 
     { t: "h2", text: "De resultaten presenteren in Berlijn" },
     {
@@ -514,7 +525,7 @@ export const sprindEudiWallet: CaseBody = {
       t: "p",
       text: "Het project omvatte de wallet-app en de backend erachter, dus de demo's lieten de complete ervaring zien: een wallet aanmaken, je identiteit bevestigen en een PID-bewijs ontvangen. Wat we daar leerden, ging direct mee in de volgende ontwerpronde.",
     },
-    { t: "image", alt: "De stand van Sphereon op het SPRIND-evenement in Berlijn" },
+    { t: "image", src: "/images/cases/sprind-eudi-wallet/berlin.webp", alt: "Presentatie op het SPRIND-evenement in Berlijn" },
     { t: "h3", text: "Wat we meenamen naar de volgende fase" },
     {
       t: "list",
@@ -531,6 +542,7 @@ export const sprindEudiWallet: CaseBody = {
       text: "Niet elk inzicht leidde meteen tot een aanpassing. Sommige vroegen eerst technisch onderzoek, andere kwamen op de lijst voor later. Samen gaven ze een duidelijke richting voor de volgende fase.",
     },
 
+    { t: "video", src: "/images/cases/sprind-eudi-wallet/wallet-demo.mp4", poster: "/images/cases/sprind-eudi-wallet/wallet-demo-poster.jpg", alt: "Demo van de wallet, van onboarding tot het ontvangen van een PID-bewijs" },
     { t: "h2", text: "Door naar fase 2" },
     {
       t: "p",

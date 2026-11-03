@@ -4,7 +4,6 @@ import type { CaseBody } from "./types";
 // English: Maria's text with small language fixes. Dutch: translation, to be checked by Maria.
 export const sphereonWallet: CaseBody = {
   en: [
-    { t: "image", alt: "Sphereon Wallet overview" },
     { t: "h2", text: "The company" },
     {
       t: "p",
@@ -105,7 +104,7 @@ export const sphereonWallet: CaseBody = {
         },
       ],
     },
-    { t: "image", alt: "Receiving and reviewing a credential" },
+    { t: "image", src: "/images/cases/sphereon-wallet/receive-credential.webp", alt: "Receiving and reviewing a credential" },
 
     { t: "h2", text: "Giving users control over their data" },
     {
@@ -116,7 +115,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "With the product and development team, I explored how to turn these data-heavy requests into a compact, understandable experience. We made the requesting party and the requested information the two main elements of the flow, with context on why the information is needed. Before giving consent, users see exactly who is asking and which details will be shared.",
     },
-    { t: "image", alt: "Sharing data with a relying party" },
+    { t: "image", src: "/images/cases/sphereon-wallet/share-data.webp", alt: "Sharing data with a relying party" },
     { t: "h3", text: "Exploring more user control" },
     {
       t: "p",
@@ -126,7 +125,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "The wallet can also see which credentials can answer a request. Instead of choosing one automatically, users could pick the credential they want to use and, where supported, select or deselect individual details. Combined with sharing only what is needed, this gives users more control over what they share, from which credential and with whom.",
     },
-    { t: "image", alt: "Concept for choosing credentials and details to share" },
+    { t: "image", src: "/images/cases/sphereon-wallet/choose-credential.webp", alt: "Concept for choosing credentials and details to share" },
 
     { t: "h2", text: "Turning setup into a guided experience" },
     {
@@ -141,7 +140,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "It worked as a starting point, but it also showed room for a more guided and trustworthy onboarding. That became the focus of the SPRIND EUDI Wallet program, where the onboarding was completely rethought together with other key wallet experiences.",
     },
-    { t: "image", alt: "The first onboarding of the Sphereon Wallet" },
+    { t: "image", src: "/images/cases/sphereon-wallet/first-onboarding.webp", alt: "The first onboarding of the Sphereon Wallet" },
     {
       t: "callout",
       text: "Project highlight: for the SPRIND EUDI Wallet program, I led the redesign of the onboarding, working with an external design agency. Over several three-month phases we integrated the German Ausweis identity check into the wallet. The new onboarding is now live in the app.",
@@ -157,7 +156,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "The first version was a simple overview. Each activity showed what happened, its status and the date and time, and it was only available on a separate activity page.",
     },
-    { t: "image", alt: "The first activity overview" },
+    { t: "image", src: "/images/cases/sphereon-wallet/activity-first.webp", alt: "The first activity overview" },
     { t: "h3", text: "How the feature evolved" },
     {
       t: "points",
@@ -180,7 +179,7 @@ export const sphereonWallet: CaseBody = {
         },
       ],
     },
-    { t: "image", alt: "The redesigned activity feed" },
+    { t: "image", src: "/images/cases/sphereon-wallet/activity-redesign.webp", alt: "The redesigned activity feed" },
 
     { t: "h2", text: "Where the project stands" },
     {
@@ -217,7 +216,8 @@ export const sphereonWallet: CaseBody = {
         },
       ],
     },
-    { t: "image", alt: "Notifications concept" },
+    { t: "image", src: "/images/cases/sphereon-wallet/current-work.webp", alt: "Work in progress: settings and account screens" },
+    { t: "image", src: "/images/cases/sphereon-wallet/design-system.webp", alt: "The Sphereon design system in Figma" },
     {
       t: "p",
       text: "I'm also researching how to build accessibility further into the product. The wallet is used in many sectors and by very different people, so it has to work for everyone. The first steps are taken, and there is more to do.",
@@ -239,7 +239,6 @@ export const sphereonWallet: CaseBody = {
   ],
 
   nl: [
-    { t: "image", alt: "Overzicht van de Sphereon Wallet" },
     { t: "h2", text: "Het bedrijf" },
     {
       t: "p",
@@ -340,7 +339,7 @@ export const sphereonWallet: CaseBody = {
         },
       ],
     },
-    { t: "image", alt: "Een bewijs ontvangen en bekijken" },
+    { t: "image", src: "/images/cases/sphereon-wallet/receive-credential.webp", alt: "Een bewijs ontvangen en bekijken" },
 
     { t: "h2", text: "Gebruikers controle geven over hun gegevens" },
     {
@@ -351,7 +350,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "Met het product- en ontwikkelteam onderzocht ik hoe we die verzoeken vol gegevens konden omzetten in een compacte, begrijpelijke ervaring. De partij die iets vraagt en de gevraagde gegevens werden de twee hoofdonderdelen van de flow, met uitleg waarom de gegevens nodig zijn. Voordat ze toestemming geven, zien gebruikers precies wie iets vraagt en welke gegevens gedeeld worden.",
     },
-    { t: "image", alt: "Gegevens delen met een organisatie" },
+    { t: "image", src: "/images/cases/sphereon-wallet/share-data.webp", alt: "Gegevens delen met een organisatie" },
     { t: "h3", text: "Meer controle voor gebruikers" },
     {
       t: "p",
@@ -361,7 +360,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "De wallet kan ook zien welke bewijzen een verzoek kunnen beantwoorden. In plaats van er automatisch één te kiezen, kunnen gebruikers zelf kiezen welk bewijs ze gebruiken en, waar dat kan, losse gegevens aan- of uitvinken. Samen met alleen delen wat nodig is, geeft dat gebruikers meer controle over wat ze delen, uit welk bewijs en met wie.",
     },
-    { t: "image", alt: "Concept om bewijzen en gegevens te kiezen bij het delen" },
+    { t: "image", src: "/images/cases/sphereon-wallet/choose-credential.webp", alt: "Concept om bewijzen en gegevens te kiezen bij het delen" },
 
     { t: "h2", text: "Van instellen naar een begeleide ervaring" },
     {
@@ -376,7 +375,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "Als begin werkte dat, maar het liet ook zien dat de onboarding beter begeleid en betrouwbaarder kon. Dat werd de focus van het SPRIND EUDI Wallet-programma, waar de onboarding samen met andere belangrijke onderdelen helemaal opnieuw is bedacht.",
     },
-    { t: "image", alt: "De eerste onboarding van de Sphereon Wallet" },
+    { t: "image", src: "/images/cases/sphereon-wallet/first-onboarding.webp", alt: "De eerste onboarding van de Sphereon Wallet" },
     {
       t: "callout",
       text: "Uitgelicht: voor het SPRIND EUDI Wallet-programma leidde ik de nieuwe onboarding, samen met een extern ontwerpbureau. In meerdere fases van drie maanden brachten we de Duitse Ausweis-controle in de wallet. De nieuwe onboarding staat nu live in de app.",
@@ -392,7 +391,7 @@ export const sphereonWallet: CaseBody = {
       t: "p",
       text: "De eerste versie was een eenvoudig overzicht. Elke activiteit toonde wat er gebeurde, de status en de datum en tijd, en was alleen te zien op een aparte activiteitenpagina.",
     },
-    { t: "image", alt: "Het eerste activiteitenoverzicht" },
+    { t: "image", src: "/images/cases/sphereon-wallet/activity-first.webp", alt: "Het eerste activiteitenoverzicht" },
     { t: "h3", text: "Hoe het verder groeide" },
     {
       t: "points",
@@ -415,7 +414,7 @@ export const sphereonWallet: CaseBody = {
         },
       ],
     },
-    { t: "image", alt: "Het vernieuwde activiteitenoverzicht" },
+    { t: "image", src: "/images/cases/sphereon-wallet/activity-redesign.webp", alt: "Het vernieuwde activiteitenoverzicht" },
 
     { t: "h2", text: "Waar het project nu staat" },
     {
@@ -452,7 +451,8 @@ export const sphereonWallet: CaseBody = {
         },
       ],
     },
-    { t: "image", alt: "Concept voor meldingen" },
+    { t: "image", src: "/images/cases/sphereon-wallet/current-work.webp", alt: "Werk in uitvoering: instellingen en account" },
+    { t: "image", src: "/images/cases/sphereon-wallet/design-system.webp", alt: "Het Sphereon design system in Figma" },
     {
       t: "p",
       text: "Ik onderzoek ook hoe toegankelijkheid beter in het product kan. De wallet wordt in veel sectoren en door heel verschillende mensen gebruikt, dus hij moet voor iedereen werken. De eerste stappen zijn gezet, en er is nog meer te doen.",
