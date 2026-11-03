@@ -1,44 +1,44 @@
 import { Link } from "@tanstack/react-router";
-import { useEffect, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import { publishedCases } from "@/data/cases";
+import { heroColumns } from "@/data/hero";
 import { caseText, education, experience, LINKEDIN, t, type Lang } from "@/lib/i18n";
 import { Placeholder, Reveal, Shell } from "./site";
 
-const CYCLE_MS = 3500;
-
-function Phone({ lang }: { lang: Lang }) {
-  const list = publishedCases();
-  const [i, setI] = useState(0);
-  const [tick, setTick] = useState(0);
-  useEffect(() => {
-    const id = setTimeout(() => setI((v) => (v + 1) % list.length), CYCLE_MS);
-    return () => clearTimeout(id);
-  }, [i, tick, list.length]);
-  const go = (n: number) => {
-    setI(n);
-    setTick((x) => x + 1);
-  };
+function Screen({ src }: { src: string }) {
   return (
-    <div className="flex flex-col items-center gap-5">
-      <div className="phone">
-        {list.map((c, n) => (
-          <div key={c.slug} className={`phone-screen ${n === i ? "is-active" : ""}`} aria-hidden={n !== i}>
-            <Placeholder label={`[Phone screen: ${c.titleEn}]`} className="h-full rounded-[28px]" />
-          </div>
-        ))}
+    <div className="hero-screen">
+      <img src={src} alt="" loading="eager" decoding="async" />
+    </div>
+  );
+}
+
+// Two columns of Maria's phone screens moving in opposite directions (desktop),
+// one horizontal row on small screens. Each list is doubled for a seamless loop.
+function ScreenColumns() {
+  const [a, b] = heroColumns;
+  const all = [...a!, ...b!];
+  return (
+    <div aria-hidden="true">
+      <div className="hero-cols hidden md:flex">
+        <div className="hero-track hero-up">
+          {[...a!, ...a!].map((src, n) => (
+            <Screen key={n} src={src} />
+          ))}
+        </div>
+        <div className="hero-track hero-down -mt-36">
+          {[...b!, ...b!].map((src, n) => (
+            <Screen key={n} src={src} />
+          ))}
+        </div>
       </div>
-      <div className="flex w-[260px] gap-2">
-        {list.map((c, n) => (
-          <button
-            key={`${c.slug}-${n === i ? tick + "-" + i : "x"}`}
-            onClick={() => go(n)}
-            aria-label={caseText(c, lang).title}
-            className="story-bar"
-          >
-            <span className={n < i ? "story-fill done" : n === i ? "story-fill run" : "story-fill"} />
-          </button>
-        ))}
+      <div className="hero-row md:hidden">
+        <div className="hero-row-track">
+          {[...all, ...all].map((src, n) => (
+            <Screen key={n} src={src} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -108,7 +108,7 @@ export function Home({ lang }: { lang: Lang }) {
             </a>
           </div>
         </Reveal>
-        <Phone lang={lang} />
+        <ScreenColumns />
       </section>
 
       <section id="work" className="section">
