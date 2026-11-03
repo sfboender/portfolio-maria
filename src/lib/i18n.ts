@@ -86,7 +86,8 @@ export const caseText = (c: Case, lang: Lang) => ({
 });
 
 export const experience = [
-  { role: "UX/UI Designer", org: "Sphereon (a 4sure Technology Solutions company)", from: "Jan 2025", to: null },
+  { role: "UX Designer", org: "Saxum", from: "Oct 2026", to: null },
+  { role: "UX/UI Designer", org: "Sphereon (a 4sure Technology Solutions company)", from: "Jan 2025", to: "Sep 2026" },
   { role: "UX/UI Specialist", org: "Sphereon", from: "Jun 2021", to: "Dec 2024" },
   { role: "Digital Identity UX/UI Intern", org: "Sphereon", from: "Jan 2021", to: "Jun 2021" },
   { role: "UX/UI Design Intern", org: "Fleks Works", from: "Jan 2020", to: "Jun 2020" },
@@ -94,5 +95,5 @@ export const experience = [
 ];
 
 export const education = [
-  { role: "Communication and Multimedia Design", org: "Hogeschool van Amsterdam", from: "2016", to: "2020" },
+  { role: "Communication and Multimedia Design (cum laude)", org: "Hogeschool van Amsterdam", from: "2016", to: "2020" },
 ];

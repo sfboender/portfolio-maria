@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import { publishedCases } from "@/data/cases";
 import { heroColumns } from "@/data/hero";
 import { caseText, education, experience, LINKEDIN, t, type Lang } from "@/lib/i18n";
-import { Placeholder, Reveal, Shell } from "./site";
+import { Reveal, Shell } from "./site";
 
 function Screen({ src }: { src: string }) {
   return (
@@ -200,7 +200,12 @@ export function Home({ lang }: { lang: Lang }) {
 
       <section id="about" className="section">
         <Reveal className="container-site grid items-center gap-12 md:grid-cols-2">
-          <Placeholder label="[Portrait photo]" className="aspect-[4/5] max-w-md rounded-[28px]" />
+          <img
+            src="/images/maria.webp"
+            alt="Maria Molenaar"
+            loading="lazy"
+            className="aspect-[4/5] w-full max-w-md rounded-[28px] border border-border object-cover"
+          />
           <div>
             <h2 className="h-section">{s.about}</h2>
             <p className="mt-6 text-xl leading-relaxed text-muted-foreground">{s.aboutText}</p>
